@@ -1,5 +1,5 @@
 {
-  "name": "express-api",
+  "name": "coinwrapper",
   "version": "1.0.0",
   "description": "API configurations for the Task Application ",
   "main": "app.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/LORD-KAY/task-api"
+    "url": "github.com/Orion-Inc/CoinWrapper"
   },
   "keywords": [
     "api",
