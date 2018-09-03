@@ -1,4 +1,4 @@
-// Testing the models 
+/* Testing the models */
 var expect = require('chai').expect,
 	should = require('chai').should;
 var User = require('../models/user'),
