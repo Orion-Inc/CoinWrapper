@@ -57,7 +57,7 @@ app.post('/signup',function(req,res){
        othername :  req.body.othername,
        username : req.body.username,
        email  : req.body.email,
-       phone :  req.body.phone_number
+       phone :  req.body.phone
    });
 
   //Check if the user already exists
