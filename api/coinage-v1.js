@@ -29,11 +29,27 @@ coinageRouter.post('/authenticate',function(req,res){
                     });
             }
 
-        })
-
+        });
 
     }else if (Resolvers.verificationCode(login_credentials)){
+        Users.findOne({ email: login_credentials }).exec(function(err,user){
+            if (!user){
+                res.status(404)
+                    .json({
+                        message: 'Email Address not found',
+                        results: null,
+                        success: false
+                    });
+            } else if(user){
 
+                res.status(200)
+                    .json({
+                        message: 'User Profile Found',
+                        results: user,
+                        success: true
+                    });
+            }
+        });
     }else{
         res.status(401)
             .json({
@@ -45,7 +61,9 @@ coinageRouter.post('/authenticate',function(req,res){
 });
 
 // Middleware for checking the authentication data
+app.use(function(req,res,next){
 
+});
 
 module.exports = coinageRouter;
 

@@ -32,5 +32,13 @@ describe(" #Testing verification code generator ", function(){
         done();
     });
 });
+
+describe(" #Testing the validation of email " ,function () {
+    it('should return a boolean value', function (done) {
+        expect(Resolvers.verificationEmail).to.be.a("function");
+        expect(Resolvers.verificationEmail("offeilord@gmail.com")).to.be.true;
+        done();
+    });
+});
 	
 	
