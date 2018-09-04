@@ -4,8 +4,18 @@ var bcrypt = require('bcryptjs'),
 
 module.exports = {
 	generateValidToken: function(bitSize, encoding=TokenGenerator.BASE62){
-        const genToken = new TokenGenerator(bitSize,encoding);
-        return genToken.generate();
+	    return new Promise( (resolve,reject) => {
+	       if (!isNaN(bitSize)){
+               const genToken = new TokenGenerator(bitSize,encoding);
+               genToken.generate().then( uid => {
+                   resolve(uid);
+               });
+           } else{
+	           reject(bitSize);
+	           return "bitSize must be a number";
+           }
+        });
+
 	},
     verificationCode: function(min,max){
 	    if (isNaN(min) && isNaN(max))
