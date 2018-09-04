@@ -101,7 +101,7 @@ coinageRouter.use(function(req,res,next){
             if (err){
                 res.status(401)
                     .json({
-                        message: 'Failed To Authenticate',
+                        message: 'Failed To Authenticate. Session has expired',
                         results: null,
                         success: false,
                     });
