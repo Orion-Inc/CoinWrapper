@@ -106,8 +106,19 @@ app.use(function(req,res,next){
                         success: false,
                     });
             } else {
-                req.decoded = decoded;
-                next();
+                //checking if token is expired
+                let current_time = new Date().getTime() / 1000;
+                if (current_time > decoded.expiresIn){
+                    res.status(401)
+                        .json({
+                            message: 'Session Has Expired',
+                            results: null,
+                            success: false
+                        });
+                } else {
+                    req.decoded = decoded;
+                    next();
+                }
             }
         });
     } else {
