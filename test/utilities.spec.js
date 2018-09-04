@@ -24,5 +24,13 @@ describe("checking the usability of the resolvers",function(){
         done();
     });
 });
+
+describe(" #Testing verification code generator ", function(){
+    it('should return a 5 digit integer', function (done) {
+        expect(Resolvers.verificationCode).to.be.a("function");
+        expect(Resolvers.verificationCode(10000,99999)).to.be.an("number");
+        done();
+    });
+});
 	
 	

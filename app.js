@@ -150,6 +150,7 @@ app.get('/all',function(req,res){
 
 // Api version 1 mount path
 app.use('/api/v1',coinageRouter);
+
 http.createServer(app).listen(app.get('port'),function(){
     console.log("The server started at port " + app.get('port'));
 });
