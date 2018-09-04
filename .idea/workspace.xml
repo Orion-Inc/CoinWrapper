@@ -90,8 +90,8 @@
       <file leaf-file-name="coinage-v1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/coinage-v1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
+            <state relative-caret-position="437">
+              <caret line="136" column="22" lean-forward="true" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -328,7 +328,7 @@
       <workItem from="1530614632954" duration="2015000" />
       <workItem from="1535962975388" duration="485000" />
       <workItem from="1535964004577" duration="9274000" />
-      <workItem from="1536003092731" duration="24995000" />
+      <workItem from="1536003092731" duration="25618000" />
     </task>
     <servers />
   </component>
@@ -365,7 +365,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36769000" />
+    <option name="totallyTimeSpent" value="37392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -623,8 +623,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/coinage-v1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
+        <state relative-caret-position="437">
+          <caret line="136" column="22" lean-forward="true" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
         </state>
       </provider>
     </entry>

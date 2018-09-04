@@ -92,7 +92,7 @@ coinageRouter.post('/authenticate',function(req,res){
 });
 
 // Middleware for checking the authentication data
-app.use(function(req,res,next){
+coinageRouter.use(function(req,res,next){
     const token = req.body.token || req.query.token || req.headers['x-access-token'];
     if (token) {
         jwt.verify(token,config.secret,{
@@ -131,9 +131,11 @@ app.use(function(req,res,next){
 
 });
 
-// @required("login");
-app.get("/home",function(req,res){
 
+coinageRouter.get('/home',function(req,res){
+    res.status(200).json({
+        message: "Yay"
+    })
 });
 
 
