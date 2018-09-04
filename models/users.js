@@ -1,9 +1,21 @@
 let mongoose = require('mongoose'),
-    User_Verification = require('./models/user_verification'),
+    User_Verification = require('./user_verification'),
     Schema = mongoose.Schema;
 
 //Defining the mongoose schema here
 let UserSchema = new Schema({
+    firstname: {
+        type: String,
+        required: true
+    },
+    othername: {
+        type: String,
+        required: true
+    },
+    username: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         required: true,
@@ -27,7 +39,7 @@ let UserSchema = new Schema({
 
 //Defining pre signals for the db operations here
 UserSchema.pre('remove',function(next){
-    User_Verification.remove({ user_id: this._id }).exec()
+    User_Verification.remove({ user_id: this._id }).exec();
     next();
 });
 

@@ -1,4 +1,5 @@
 var nodemailer = require('nodemailer');
+const BASE_URL = 'http://localhost:8080';
 var tokenNotifier = function(fromEmail,toEmail,toName,code){
 	var poolConfig = {
 		pool:true,
@@ -22,13 +23,13 @@ var tokenNotifier = function(fromEmail,toEmail,toName,code){
 		from: fromEmail,
 		to: toEmail,
 		subject: 'Accounts Activation Code',
-		html: "<h3> Hi "+ toName + ",</h3><br/><p>Thank you for signing up for Quest - A Intuitive Task App.</p><p>Please you this code "+ code +" to activate your accounts. Once your accounts is activated , \
-		you can enjoy all the amazing experience that comes with <strong>Quest</strong>\
+		html: "<h3> Hi "+ toName + ",</h3><br/><p>Thank you for signing up for Coin Wrapper - An intuitive exchange platform.</p><p>Please you this link "+ BASE_URL + "/auth/" + toEmail+"?token="+code +" to log into  your accounts. Once your accounts is activated , \
+		you can enjoy all the amazing experience that comes with <strong>Coin Wrapper</strong>\
 		 </p>"
 	};
 	transporter.sendMail(message,function(err,info){
 		if(!err){
-			console.log(info.messageId)
+			console.log(info)
 		}else{
 			console.log(err);
 		}

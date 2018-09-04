@@ -8,7 +8,10 @@ var express = require('express'),
     bcrypt = require('bcryptjs'),
     cors = require('cors'),
     nodemailer = require('nodemailer'),
+
     config = require('./config'),
+    Users = require('./models/users'),
+    User_Verification = require('./models/user_verification'),
     tokenNotifier  = require('./utils/nodemailer'),
     Resolvers      = require('./utils/resolvers');
 
@@ -18,6 +21,8 @@ var app = express();
 //Setting the basic initials
 app.set('title','Task Application API');
 app.set('port',process.env.PORT || 8080);
+app.set('BASE_URL','localhost:8080/');
+app.set('SECRET', config.secret);
 
 mongoose.connect(config.database); // this is a pending connection
 var db = mongoose.connection;
@@ -42,6 +47,95 @@ app.get('/',function(request,response,next){
 
 
 // Calling the api configs here
+app.use(function(req,res,next){
+    console.log("Sample middleware");
+    next();
+});
+
+app.post('/signup',function(req,res){
+   let Query = new Users({
+       firstname: req.body.firstname,
+       othername :  req.body.othername,
+       username : req.body.username,
+       email  : req.body.email,
+       phone :  req.body.phone_number
+   });
+
+  //Check if the user already exists
+    Users.findOne({ email: Query.email },function(err, user){
+        if (err){
+            throw err;
+        }
+
+        if (!user){
+            Query.save(function(err,results){
+                if (!err){
+                    // Using jwt instead for the token generation
+                    const payload = {
+                        user_id: results._id
+                    };
+
+                    let uriToken = jwt.sign(payload,app.get('SECRET'),{
+                        algorithm: 'HS256',
+                        expiresIn: '300s'
+                    });
+
+                    let Verification = new User_Verification({
+                        token: 'null',
+                        user_id: results._id
+                    });
+
+                    Verification.save(function(err,data){
+                        if (!err){
+                            const fullname = results.firstname + "  " + results.othername;
+                            tokenNotifier('lordkay1996@gmail.com',results.email,fullname,uriToken);
+
+                            res.status(201).json({
+                                message: "User Profile Successfully Created\n An Email has been sent to your "+ results.email + " .",
+                                success: true
+                            });
+                        }else{
+                            res.status(401)
+                                .json({
+                                    message: 'An error occurred while saving access token',
+                                    success: false
+                                });
+                        }
+                    });
+                }else {
+                    console.log(err);
+                    res.status(401)
+                        .json({
+                            message: 'An error occurred while saving to user data',
+                            success: false
+                        });
+                }
+            })
+        } else if(user){
+            res.status(401).json({
+                message: 'User already Exists',
+                success: false
+            })
+        }
+    })
+
+});
+
+app.get('/delete',function(req,res){
+    Users.remove().exec(function(err,data){
+        res.json({
+            result: data
+        })
+    });
+});
+
+app.get('/verification',function(req,res){
+    User_Verification.find({}).remove(function(err,data){
+        res.json({
+            data: data
+        })
+    })
+});
 
 http.createServer(app).listen(app.get('port'),function(){
     console.log("The server started at port " + app.get('port'));

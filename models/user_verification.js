@@ -1,6 +1,6 @@
 let mongoose = require("mongoose"),
     Schema = mongoose.Schema,
-    Users  = require("./models/user_verification");
+    Users  = require("./users");
 
 let UserVerificationSchema = new Schema({
     token: {
