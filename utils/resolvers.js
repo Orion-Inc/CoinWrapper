@@ -28,6 +28,15 @@ module.exports = {
     verificationEmail: function(email){
 	    return  /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email);
     },
-    referenceNumber: function(refs) {
+    formatString: function(transform, input){
+        if (transform === 'U' || transform === 'u') {
+            return input.toUpperCase();
+        } else if (transform === 'L' || transform === 'l') {
+            return input.toLowerCase();
+        } else if (transform === 'C' || transform === 'c') {
+            return input.charAt(0).toUpperCase() + input.slice(1);
+        } else {
+            return input.toUpperCase();
+        }
     }
 };

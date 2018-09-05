@@ -23,6 +23,13 @@ describe("checking the usability of the resolvers",function(){
         });
         done();
     });
+
+    it('should return transformed letters', function (done) {
+        expect(Resolvers.formatString('u','lord')).to.equal('LORD');
+        expect(Resolvers.formatString('l','LORD')).to.equal('lord');
+        expect(Resolvers.formatString('c','lord')).to.equal('Lord');
+        done();
+    });
 });
 
 describe(" #Testing verification code generator ", function(){

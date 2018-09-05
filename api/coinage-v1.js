@@ -11,8 +11,10 @@ let coinageRouter = express.Router();
 
 //Login Route Here
 coinageRouter.post('/authenticate',function(req,res){
-    const login_credentials = req.body.credentials;
-    if (!isNaN(login_credentials)){
+    let login_credentials = req.body.credentials;
+    let auth_method = Resolvers.formatString('u',req.body.auth_method);
+
+    if (!isNaN(login_credentials) ){
         //Login if it is a number - phone number
         Users.findOne({ phone: login_credentials }).exec(function(err,user){
             if (!user){
