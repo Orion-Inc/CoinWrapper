@@ -27,5 +27,7 @@ module.exports = {
     },
     verificationEmail: function(email){
 	    return  /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email);
+    },
+    referenceNumber: function(refs) {
     }
 };
