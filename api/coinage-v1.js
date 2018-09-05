@@ -14,7 +14,7 @@ coinageRouter.post('/authenticate',function(req,res){
     let login_credentials = req.body.credentials;
     let auth_method = Resolvers.formatString('u',req.body.auth_method);
 
-    if (!isNaN(login_credentials)){
+    if (!isNaN(login_credentials) && auth_method !== ""){
         //Login if it is a number - phone number
         Users.findOne({ phone: login_credentials }).exec(function(err,user){
             if (!user){
@@ -34,8 +34,15 @@ coinageRouter.post('/authenticate',function(req,res){
                     expiresIn: '300s'
                 });
 
-                //Sending the login url for user to login
-                tokenNotifier('lordkay1996@gmail.com',user.email,user.firstname + ' ' + user.othername,token);
+                //Sending login url with token base on the user option
+                if (auth_method === "EMAIL") {
+                    //Sending the login url for user to login
+                    tokenNotifier('lordkay1996@gmail.com',user.email,user.firstname + ' ' + user.othername,token);
+
+                } else if (auth_method === "SMS") {
+                    //Sending the login url thru sms from here
+
+                }
 
                 res.status(200)
                     .json({
@@ -50,7 +57,7 @@ coinageRouter.post('/authenticate',function(req,res){
 
         });
 
-    }else if (Resolvers.verificationCode(login_credentials)){
+    }else if (Resolvers.verificationCode(login_credentials) && auth_method !== ""){
         Users.findOne({ email: login_credentials }).exec(function(err,user){
             if (!user){
                 res.status(404)
@@ -69,8 +76,15 @@ coinageRouter.post('/authenticate',function(req,res){
                     expiresIn: '300s'
                 });
 
-                //Sending the login url for user to login
-                tokenNotifier('lordkay1996@gmail.com',user.email,user.firstname + ' ' + user.othername,token);
+                //Sending login url with token base on the user option
+                if (auth_method === "EMAIL") {
+                    //Sending the login url for user to login
+                    tokenNotifier('lordkay1996@gmail.com',user.email,user.firstname + ' ' + user.othername,token);
+
+                } else if (auth_method === "SMS") {
+                    //Sending the login url thru sms from here
+
+                }
 
                 res.status(200)
                     .json({
