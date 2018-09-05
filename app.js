@@ -23,7 +23,7 @@ app.set('port',process.env.PORT || 8080);
 app.set('BASE_URL','localhost:8080/');
 app.set('SECRET', config.secret);
 
-mongoose.connect(config.database); // this is a pending connection
+mongoose.connect(config.database || process.env.MONGODB_URL); // this is a pending connection
 let db = mongoose.connection;
 db.on('error',console.error.bind(console," Connection Error "));
 db.once('open',function(){
