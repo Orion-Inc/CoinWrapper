@@ -14,7 +14,7 @@ coinageRouter.post('/authenticate',function(req,res){
     let login_credentials = req.body.credentials;
     let auth_method = Resolvers.formatString('u',req.body.auth_method);
 
-    if (!isNaN(login_credentials) ){
+    if (!isNaN(login_credentials)){
         //Login if it is a number - phone number
         Users.findOne({ phone: login_credentials }).exec(function(err,user){
             if (!user){

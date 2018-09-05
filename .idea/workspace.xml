@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/coinage-v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/coinage-v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/users.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/users.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/utilities.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/utilities.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/resolvers.js" afterDir="false" />
     </list>
     <ignored path="express-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +36,8 @@
       <file leaf-file-name="utilities.spec.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/utilities.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+            <state relative-caret-position="420">
+              <caret line="28" column="68" lean-forward="true" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -55,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resolvers.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="resolvers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/resolvers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+            <state relative-caret-position="382">
+              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -73,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coinage-v1.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="coinage-v1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/coinage-v1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            <state relative-caret-position="47">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -132,9 +128,9 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/users.spec.js" />
-        <option value="$PROJECT_DIR$/api/coinage-v1.js" />
         <option value="$PROJECT_DIR$/test/utilities.spec.js" />
         <option value="$PROJECT_DIR$/utils/resolvers.js" />
+        <option value="$PROJECT_DIR$/api/coinage-v1.js" />
       </list>
     </option>
   </component>
@@ -325,17 +321,11 @@
       <workItem from="1535964004577" duration="9274000" />
       <workItem from="1536003092731" duration="29062000" />
       <workItem from="1536156655273" duration="3192000" />
-      <workItem from="1536178750322" duration="2174000" />
+      <workItem from="1536178750322" duration="2327000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="checking_the_usability_of_the_resolvers_should_return_transformed_letters - 2018.09.05 at 20h 44m 46s.xml">
-      <configuration name="checking the usability of the resolvers.should return transformed letters" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="checking_the_usability_of_the_resolvers_should_return_transformed_letters - 2018.09.05 at 20h 44m 59s.xml">
-      <configuration name="checking the usability of the resolvers.should return transformed letters" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="checking_the_usability_of_the_resolvers_should_return_transformed_letters - 2018.09.05 at 20h 45m 05s.xml">
       <configuration name="checking the usability of the resolvers.should return transformed letters" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -360,9 +350,15 @@
     <history-entry file="checking_the_usability_of_the_resolvers_should_return_transformed_letters - 2018.09.05 at 20h 54m 47s.xml">
       <configuration name="checking the usability of the resolvers.should return transformed letters" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="checking_the_usability_of_the_resolvers_should_return_transformed_letters - 2018.09.05 at 20h 55m 42s.xml">
+      <configuration name="checking the usability of the resolvers.should return transformed letters" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="checking_the_usability_of_the_resolvers_should_return_transformed_letters - 2018.09.05 at 20h 55m 54s.xml">
+      <configuration name="checking the usability of the resolvers.should return transformed letters" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46202000" />
+    <option name="totallyTimeSpent" value="46355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,11 +377,11 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32928944" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29927006" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29927006" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" sideWeight="0.50606585" side_tool="true" weight="0.2494331" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2586027" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2586027" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986135" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -682,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/coinage-v1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/users.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -696,17 +685,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/utilities.spec.js">
+    <entry file="file://$PROJECT_DIR$/utils/resolvers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        <state relative-caret-position="382">
+          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/resolvers.js">
+    <entry file="file://$PROJECT_DIR$/test/utilities.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        <state relative-caret-position="420">
+          <caret line="28" column="68" lean-forward="true" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/coinage-v1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
