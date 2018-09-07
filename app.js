@@ -61,7 +61,7 @@ app.post('/signup',function(req,res){
    });
 
   //Check if the user already exists
-    Users.findOne({ email: Query.email },function(err, user){
+    Users.findOne({ email: Query.email , phone: Query.phone },function(err, user){
         if (err){
             throw err;
         }

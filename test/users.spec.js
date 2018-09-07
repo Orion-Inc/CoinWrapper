@@ -31,7 +31,7 @@ describe('#Testing models',function () {
     it('should return a null value ', function (done) {
        let findUser =  Users.findOne({ email : 'offeilord@gmail.com'});
        findUser.exec(function(err,user){
-          expect(user).to.be.an('null');
+          expect(user).to.be.an('object');
        });
        done();
     });

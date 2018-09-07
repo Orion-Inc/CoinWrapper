@@ -28,7 +28,7 @@ module.exports = {
     verificationEmail: function(email){
 	    return  /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email);
     },
-    formatString: function(transform, input){
+    formatString: function(transform, input="email"){
         if (transform === 'U' || transform === 'u') {
             return input.toUpperCase();
         } else if (transform === 'L' || transform === 'l') {

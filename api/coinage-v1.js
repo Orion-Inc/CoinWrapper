@@ -148,7 +148,8 @@ coinageRouter.use(function(req,res,next){
 });
 
 
-coinageRouter.get('/home',function(req,res){
+coinageRouter.get('/auth/:email',function(req,res){
+    let email = req.params.email;
     res.status(200).json({
         message: "Yay"
     })
