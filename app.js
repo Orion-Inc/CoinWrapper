@@ -13,7 +13,6 @@ let express = require('express'),
     tokenNotifier  = require('./utils/nodemailer'),
     Resolvers      = require('./utils/resolvers'),
     coinageRouter = require('./api/coinage-v1');
-
 //Instantiating the express  application
 let app = express();
 

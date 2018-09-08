@@ -66,6 +66,8 @@ coinageRouter.post('/authenticate',function(req,res){
                         results: null,
                         success: false
                     });
+                //Redirect the user to the sign up
+                res.redirect(401,'/signup');
             } else if(user){
                 const payload = {
                     user_id: user._id

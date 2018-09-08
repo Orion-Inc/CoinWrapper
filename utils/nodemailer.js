@@ -1,5 +1,5 @@
 let nodemailer = require('nodemailer');
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'app100.localhost/CoinWrapper-Front-end/public';
 let tokenNotifier = function (fromEmail, toEmail, toName, code) {
     let poolConfig = {
         pool: true,
