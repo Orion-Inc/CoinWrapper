@@ -12,7 +12,7 @@ apiAuth.use('/auth',[SignUpRouter,SignInRouter]);
 //Middleware for checking the authentication data
 apiAuth.use(AuthorizationGuard);
 //Authorization routes will appear here
-apiAuth.get('/auth/:email',function(req,res){
+apiAuth.get('/sample/:email',function(req,res){
     let email = req.params.email;
     res.status(200).json({
         message: "Yay"

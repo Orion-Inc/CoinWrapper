@@ -1,3 +1,4 @@
+require("module-alias/register");
 let express = require("express"),
     jwt = require("jsonwebtoken"),
     config = require("@conn/connectionString");
@@ -10,6 +11,7 @@ authorizationGuard.use(function(req,res,next){
         jwt.verify(token,config.secret,{
             algorithm: ['HS256']
         },function(err,decoded){
+            console.log(err);
             if (err){
                 res.status(401)
                     .json({
@@ -18,20 +20,9 @@ authorizationGuard.use(function(req,res,next){
                         success: false,
                     });
             } else {
-                //checking if token is expired
-                let current_time = new Date().getTime() / 1000;
-                if (current_time > decoded.expiresIn){
-                    res.status(401)
-                        .json({
-                            message: 'Session Has Expired',
-                            results: null,
-                            success: false
-                        });
-                } else {
-                    req.decoded = decoded;
-                    next();
+                req.decoded = decoded;
+                next();
                 }
-            }
         });
     } else {
         res.status(401)
