@@ -4,9 +4,6 @@
     <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/swap-v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/swap-v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/auth/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/auth/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/auth/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/auth/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/nodemailer.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/nodemailer.js" afterDir="false" />
     </list>
     <ignored path="express-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,27 +34,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2181" />
+          <entry key="js" value="2419" />
           <entry key="json" value="124" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="124" />
-          <entry key="JavaScript" value="2181" />
+          <entry key="JavaScript" value="2419" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="js" value="6" />
-          <entry key="json" value="3" />
+          <entry key="js" value="12" />
+          <entry key="json" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="6" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="12" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -69,22 +66,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+        <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+            <state relative-caret-position="116">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/guards/authorizationGuard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
+        <entry file="file://$PROJECT_DIR$/connection/connectionString.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-              <folding>
-                <element signature="e#632#1837#0" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -116,7 +119,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/v1/auth/signin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
@@ -169,11 +172,12 @@
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/connection/connectionString.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/api/swap-v1.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/utils/nodemailer.js" />
         <option value="$PROJECT_DIR$/api/v1/auth/signup.js" />
         <option value="$PROJECT_DIR$/api/v1/auth/signin.js" />
+        <option value="$PROJECT_DIR$/api/swap-v1.js" />
+        <option value="$PROJECT_DIR$/guards/authorizationGuard.js" />
       </list>
     </option>
   </component>
@@ -229,6 +233,61 @@
               <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
               <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="guards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="module-alias" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="module-alias" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="module-alias" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="module-alias" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="module-alias" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bar" type="462c0819:PsiDirectoryNode" />
+              <item name="baz" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -396,7 +455,7 @@
       <workItem from="1536431902399" duration="974000" />
       <workItem from="1536476372441" duration="720000" />
       <workItem from="1536477098976" duration="687000" />
-      <workItem from="1536487848820" duration="8378000" />
+      <workItem from="1536487848820" duration="8980000" />
     </task>
     <servers />
   </component>
@@ -433,7 +492,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68797000" />
+    <option name="totallyTimeSpent" value="69399000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,7 +519,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290993" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35681292" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35681292" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3290993" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -596,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connection/connectionString.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -614,16 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="e#632#1837#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -652,6 +694,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="80" column="124" selection-start-line="80" selection-start-column="124" selection-end-line="80" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connection/connectionString.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/module-alias/register.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/module-alias/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1860" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/module-alias/test/src/bar/baz/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/module-alias/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guards/authorizationGuard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
         </state>
       </provider>
     </entry>

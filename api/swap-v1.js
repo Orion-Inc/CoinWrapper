@@ -9,44 +9,7 @@ let apiAuth = express.Router();
 //Sign up and login route will be here
 apiAuth.use('/auth',[SignUpRouter,SignInRouter]);
 //Middleware for checking the authentication data
-apiAuth.use(function(req,res,next){
-    const token = req.body.token || req.query.token || req.headers['x-access-token'];
-    if (token) {
-        jwt.verify(token,config.secret,{
-            algorithm: ['HS256']
-        },function(err,decoded){
-            if (err){
-                res.status(401)
-                    .json({
-                        message: 'Failed To Authenticate. Session has expired',
-                        results: null,
-                        success: false,
-                    });
-            } else {
-                //checking if token is expired
-                let current_time = new Date().getTime() / 1000;
-                if (current_time > decoded.expiresIn){
-                    res.status(401)
-                        .json({
-                            message: 'Session Has Expired',
-                            results: null,
-                            success: false
-                        });
-                } else {
-                    req.decoded = decoded;
-                    next();
-                }
-            }
-        });
-    } else {
-        res.status(401)
-            .json({
-                message: 'No Token provided',
-                success: false,
-            });
-    }
 
-});
 
 apiAuth.get('/auth/:email',function(req,res){
     let email = req.params.email;
