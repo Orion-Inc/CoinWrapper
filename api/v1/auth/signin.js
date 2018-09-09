@@ -36,7 +36,7 @@ signinRouter.post('/authenticate',function(req,res){
                 //Sending login url with token base on the user option
                 if (auth_method === "EMAIL") {
                     //Sending the login url for user to login
-                    tokenNotifier('lordkay1996@gmail.com',user.email,user.firstname + ' ' + user.othername,token);
+                    tokenNotifier('lordkay1996@gmail.com',user.email,user.firstname + ' ' + user.othername,token,"Signing ");
                 } else if (auth_method === "SMS") {
                     //Sending the login url thru sms from here
 
@@ -78,7 +78,7 @@ signinRouter.post('/authenticate',function(req,res){
                 //Sending login url with token base on the user option
                 if (auth_method === "EMAIL") {
                     //Sending the login url for user to login
-                    tokenNotifier('lordkay1996@gmail.com',user.email,user.firstname + ' ' + user.othername,token);
+                    tokenNotifier('lordkay1996@gmail.com',user.email,user.firstname + ' ' + user.othername,token,"Signing In");
 
                 } else if (auth_method === "SMS") {
                     //Sending the login url thru sms from here

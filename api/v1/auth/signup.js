@@ -49,7 +49,7 @@ signupRouter.post('/signup',function(req,res){
                     Verification.save(function(err,data){
                         if (!err){
                             const fullname = results.firstname + "  " + results.othername;
-                            tokenNotifier('lordkay1996@gmail.com',results.email,fullname,uriToken);
+                            tokenNotifier('lordkay1996@gmail.com',results.email,fullname,uriToken,"Signing Up");
 
                             res.status(201).json({
                                 message: "User Profile Successfully Created\n An Email has been sent to your "+ results.email + " .",
