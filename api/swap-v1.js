@@ -1,12 +1,6 @@
 //Register the module aliases here
 require('module-alias/register');
 let express = require("express"),
-    Users   = require("../models/users"),
-    jwt  = require("jsonwebtoken"),
-    Resolvers = require("../utils/resolvers"),
-    User_Verification = require("../models/user_verification"),
-    tokenNotifier = require("../utils/nodemailer"),
-    config = require("@conn/connectionString"),
     SignUpRouter = require("./v1/auth/signup"),
     SignInRouter = require("./v1/auth/signin"),
     app = express();
