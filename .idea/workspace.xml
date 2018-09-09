@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/api/swap-v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/swap-v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/auth/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/auth/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/auth/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/auth/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth/SignInController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth/SignInController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/auth/SignUpController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth/SignUpController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guards/authorizationGuard.js" beforeDir="false" afterPath="$PROJECT_DIR$/guards/authorizationGuard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="express-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,11 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="353">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -115,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/auth/SignUpController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="304">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -188,12 +182,12 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/utils/nodemailer.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/controllers/auth/SignUpController.js" />
         <option value="$PROJECT_DIR$/api/v1/auth/signup.js" />
         <option value="$PROJECT_DIR$/controllers/auth/SignInController.js" />
         <option value="$PROJECT_DIR$/api/v1/auth/signin.js" />
         <option value="$PROJECT_DIR$/guards/authorizationGuard.js" />
         <option value="$PROJECT_DIR$/api/swap-v1.js" />
+        <option value="$PROJECT_DIR$/controllers/auth/SignUpController.js" />
       </list>
     </option>
   </component>
@@ -253,7 +247,13 @@
             <path>
               <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
               <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
-              <item name="guards" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
@@ -426,7 +426,7 @@
       <workItem from="1536431902399" duration="974000" />
       <workItem from="1536476372441" duration="720000" />
       <workItem from="1536477098976" duration="687000" />
-      <workItem from="1536487848820" duration="11603000" />
+      <workItem from="1536487848820" duration="11880000" />
     </task>
     <servers />
   </component>
@@ -463,7 +463,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72022000" />
+    <option name="totallyTimeSpent" value="72299000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -668,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/auth/SignUpController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/auth/signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -712,8 +705,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="353">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/auth/SignUpController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
