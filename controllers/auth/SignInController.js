@@ -36,7 +36,7 @@ SignInController = {
                     //Sending login url with token base on the user option
                     if (auth_method === "EMAIL") {
                         //Sending the login url for user to login
-                        tokenNotifier('lordkay1996@gmail.com', user.email, user.firstname + ' ' + user.othername, token, "Signing ");
+                        tokenNotifier('lordkay1996@gmail.com', user.email, user.firstname + ' ' + user.othername, token, "Signing In");
                     } else if (auth_method === "SMS") {
                         //Sending the login url thru sms from here
 
