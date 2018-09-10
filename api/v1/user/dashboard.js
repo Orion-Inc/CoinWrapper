@@ -4,7 +4,7 @@ let express = require("express"),
 
 dashboardRouter = express.Router();
 // Routes
-dashboardRouter.get('/authorize/user',DashboardController.redirect);
+dashboardRouter.get('/authorize/:email',DashboardController.reroute);
 dashboardRouter.get('/home',DashboardController.index);
 //exporting the dashboard module
 module.exports = dashboardRouter;
