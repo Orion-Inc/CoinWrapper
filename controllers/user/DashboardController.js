@@ -4,8 +4,12 @@ let express = require("express"),
 
 let DashboardController;
 DashboardController = {
-    index: function(req,res){
+    redirect: function(req,res){
 
+    },
+    index: function(req,res){
+        const user_id = req.decoded;
+        console.log(user_id);
     }
 };
 
