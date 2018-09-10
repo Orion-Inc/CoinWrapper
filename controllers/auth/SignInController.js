@@ -1,9 +1,9 @@
 require("module-alias/register");
 let app = require("express"),
-    Users = require("@models/users"),
+    Users = require("@models/users/users"),
     jwt = require("jsonwebtoken"),
     Resolvers = require("@utils/resolvers"),
-    User_Verification = require("@models/user_verification"),
+    User_Verification = require("@models/users/user_verification"),
     tokenNotifier = require("@utils/nodemailer"),
     config = require("@conn/connectionString");
 

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/api/v1/user/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/user/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth/SignInController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth/SignInController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth/SignUpController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth/SignUpController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user/DashboardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user/DashboardController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user_verification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/users.js" beforeDir="false" />
     </list>
     <ignored path="express-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,27 +37,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="3250" />
+          <entry key="js" value="3474" />
           <entry key="json" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="161" />
-          <entry key="JavaScript" value="3250" />
+          <entry key="JavaScript" value="3474" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="js" value="21" />
+          <entry key="js" value="24" />
           <entry key="json" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="21" />
+          <entry key="JavaScript" value="24" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -73,20 +77,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/v1/user/dashboard.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/v1/auth/signin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            <state relative-caret-position="196">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/v1/auth/signin.js">
+        <entry file="file://$PROJECT_DIR$/controllers/auth/SignInController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="56">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/auth/SignUpController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -132,9 +145,10 @@
         <option value="$PROJECT_DIR$/api/v1/auth/signin.js" />
         <option value="$PROJECT_DIR$/guards/authorizationGuard.js" />
         <option value="$PROJECT_DIR$/api/swap-v1.js" />
-        <option value="$PROJECT_DIR$/controllers/auth/SignUpController.js" />
-        <option value="$PROJECT_DIR$/controllers/auth/SignInController.js" />
         <option value="$PROJECT_DIR$/api/v1/user/dashboard.js" />
+        <option value="$PROJECT_DIR$/controllers/user/DashboardController.js" />
+        <option value="$PROJECT_DIR$/controllers/auth/SignInController.js" />
+        <option value="$PROJECT_DIR$/controllers/auth/SignUpController.js" />
       </list>
     </option>
   </component>
@@ -203,6 +217,22 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -372,7 +402,7 @@
       <workItem from="1536477098976" duration="687000" />
       <workItem from="1536487848820" duration="12141000" />
       <workItem from="1536505628955" duration="922000" />
-      <workItem from="1536531212714" duration="608000" />
+      <workItem from="1536531212714" duration="1394000" />
     </task>
     <servers />
   </component>
@@ -409,7 +439,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74090000" />
+    <option name="totallyTimeSpent" value="74876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,20 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/auth/SignUpController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/auth/SignInController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="38" column="132" selection-start-line="38" selection-start-column="132" selection-end-line="38" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/resolvers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -637,6 +653,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user/DashboardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/user/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -647,14 +677,21 @@
     <entry file="file://$PROJECT_DIR$/api/v1/auth/signin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/user/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/controllers/auth/SignInController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/auth/SignUpController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>
