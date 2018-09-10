@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="" />
     <ignored path="express-api.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -53,7 +51,7 @@
           <entry key="Procfile" value="1" />
           <entry key="env" value="3" />
           <entry key="gitignore" value="4" />
-          <entry key="js" value="46" />
+          <entry key="js" value="47" />
           <entry key="json" value="6" />
         </counts>
       </usages-collector>
@@ -61,7 +59,7 @@
         <counts>
           <entry key=".env file" value="2" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="46" />
+          <entry key="JavaScript" value="47" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
@@ -81,12 +79,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
+            <state relative-caret-position="-32">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/users/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-159" />
           </provider>
         </entry>
       </file>
@@ -104,15 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="466">
               <caret line="80" column="52" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connection/connectionString.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -480,7 +476,7 @@
       <workItem from="1536487848820" duration="12141000" />
       <workItem from="1536505628955" duration="922000" />
       <workItem from="1536531212714" duration="6771000" />
-      <workItem from="1536583301137" duration="6192000" />
+      <workItem from="1536583301137" duration="6924000" />
     </task>
     <servers />
   </component>
@@ -517,7 +513,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88967000" />
+    <option name="totallyTimeSpent" value="89699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,8 +526,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49393415" visible="true" weight="0.11995178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49393415" visible="true" weight="0.11995178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50606585" side_tool="true" weight="0.2494331" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -543,7 +540,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290993" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3205394" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3205394" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3290993" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -714,11 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/users/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -770,9 +762,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
+        <state relative-caret-position="-32">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/users/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159" />
       </provider>
     </entry>
   </component>
