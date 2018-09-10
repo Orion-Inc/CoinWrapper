@@ -4,6 +4,7 @@ let express = require("express"),
     SignUpRouter = require("./v1/auth/signup"),
     SignInRouter = require("./v1/auth/signin"),
     AuthorizationGuard = require("@guards/authorizationGuard"),
+    DashboardRouter = require("./v1/user/dashboard"),
     app = express();
 
 let apiAuth = express.Router();
@@ -12,12 +13,7 @@ apiAuth.use('/auth',[SignUpRouter,SignInRouter]);
 //Middleware for checking the authentication data
 apiAuth.use(AuthorizationGuard);
 //Authorization routes will appear here
-apiAuth.get('/sample/:email',function(req,res){
-    let email = req.params.email;
-    res.status(200).json({
-        message: "Yay"
-    })
-});
+apiAuth.use('/user',DashboardRouter);
 
 module.exports = apiAuth;
 
