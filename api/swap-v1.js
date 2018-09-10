@@ -13,10 +13,9 @@ apiAuth.use('/auth',[SignUpRouter,SignInRouter]);
 //Middleware for checking the authentication data
 apiAuth.use(AuthorizationGuard);
 //Authorization routes will appear here
-apiAuth.use('/user',DashboardRouter);
+apiAuth.use('/user', DashboardRouter);
 
 module.exports = apiAuth;
-
 
 
 

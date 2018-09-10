@@ -7,4 +7,4 @@ dashboardRouter = express.Router();
 dashboardRouter.get('/authorize',DashboardController.redirect);
 dashboardRouter.get('/home',DashboardController.index);
 //exporting the dashboard module
-module.exports = DashboardController;
+module.exports = dashboardRouter;

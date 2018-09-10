@@ -11,7 +11,6 @@ authorizationGuard.use(function(req,res,next){
         jwt.verify(token,config.secret,{
             algorithm: ['HS256']
         },function(err,decoded){
-            console.log(err);
             if (err){
                 res.status(401)
                     .json({
