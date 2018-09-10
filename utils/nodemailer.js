@@ -1,5 +1,21 @@
-let nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
+const { google } = require('googleapis');
 const BASE_URL = 'http://app100.localhost/CoinWrapper-Front-end/public';
+//Defining a function to get the access token when it expires
+const OAuth2 = google.auth.OAuth2;
+const oauth2Client = new OAuth2(
+    "343833076140-995cnklgnkddhte6ea5v5fo47hbhg7jm.apps.googleusercontent.com", //client id
+    "_KGDACP7LsffojcISKTHoRWg", //client secret
+    "https://developers.google.com/oauthplayground" //redirect URL
+);
+
+oauth2Client.setCredentials({
+    refresh_token: "1/c6BE2nOGA0KRNwpZCMjBydLzrGYOCBbAtegVubj8YWQ"
+});
+
+const accessToken = oauth2Client.refreshAccessToken()
+    .then( res => res.credentials.access_token);
+
 let tokenNotifier = function (fromEmail, toEmail, toName, code , page = "") {
     let poolConfig = {
         pool: true,
@@ -8,13 +24,12 @@ let tokenNotifier = function (fromEmail, toEmail, toName, code , page = "") {
         secure: true,
         auth: {
             type: 'oauth2',
-            user: 'lordkay1996@gmail.com',
-            clientId: '932652975583-c44a93ppo8m56bv98uv3hn6d2s7juvsj.apps.googleusercontent.com',
-            clientSecret: '_zkJjOGsYe98w7t23mfDirvm',
-            refreshToken: '1/z2lMPjoQd6s3gz8o9h59v6RXFcq43uOqeuK0ASVLhf8',
-            accessToken: 'ya29.GlvfBQepXZcVJt51m_zyPOlpc1B8BylyI3IZ8rRMiBZKqqqIyMBgWzDkR67pCD3LDDI1QpITp69xaRpbn1JDFGyKcmj7BK8X_35bfDY4YFIDr7DTnIahR9kycjiD',
+            user: 'orionghana.io@gmail.com',
+            clientId: '343833076140-995cnklgnkddhte6ea5v5fo47hbhg7jm.apps.googleusercontent.com',
+            clientSecret: '_KGDACP7LsffojcISKTHoRWg',
+            refreshToken: '1/c6BE2nOGA0KRNwpZCMjBydLzrGYOCBbAtegVubj8YWQ',
+            accessToken: accessToken,
             expires: 3600
-
         }
     };
 
