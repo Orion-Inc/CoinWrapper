@@ -1,8 +1,10 @@
 /* Testing the models */
+require("module-alias/register");
 let expect = require('chai').expect,
     should = require('chai').should;
-let User = require('../models/users'),
-    Resolvers = require('../utils/resolvers');
+let User = require('@models/users/users'),
+    Resolvers = require('@utils/resolvers'),
+    tokenNotifier = require("@utils/nodemailer");
 
 
 //testing the utilities
@@ -47,5 +49,12 @@ describe(" #Testing the validation of email " ,function () {
         done();
     });
 });
-	
+
+describe(" #Testing the email utility ",function(){
+    it('should send an email to the provided address', function (done) {
+        let email = tokenNotifier('orionghana.io@gmail.com', 'offeilord@gmail.com', 'Lord Acheampong', 'siofidfosifosfsdf', "Signing In");
+        console.log(email);
+        done();
+    });
+})
 	
