@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/user/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/user/dashboard.js" afterDir="false" />
     </list>
     <ignored path="express-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,27 +33,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="3130" />
+          <entry key="js" value="3250" />
           <entry key="json" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="161" />
-          <entry key="JavaScript" value="3130" />
+          <entry key="JavaScript" value="3250" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="js" value="19" />
+          <entry key="js" value="21" />
           <entry key="json" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="19" />
+          <entry key="JavaScript" value="21" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -66,11 +64,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
               <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/v1/user/dashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/v1/auth/signin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -118,6 +134,7 @@
         <option value="$PROJECT_DIR$/api/swap-v1.js" />
         <option value="$PROJECT_DIR$/controllers/auth/SignUpController.js" />
         <option value="$PROJECT_DIR$/controllers/auth/SignInController.js" />
+        <option value="$PROJECT_DIR$/api/v1/user/dashboard.js" />
       </list>
     </option>
   </component>
@@ -173,6 +190,19 @@
               <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
               <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoinWrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoinWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,7 +372,7 @@
       <workItem from="1536477098976" duration="687000" />
       <workItem from="1536487848820" duration="12141000" />
       <workItem from="1536505628955" duration="922000" />
-      <workItem from="1536531212714" duration="339000" />
+      <workItem from="1536531212714" duration="608000" />
     </task>
     <servers />
   </component>
@@ -379,7 +409,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73821000" />
+    <option name="totallyTimeSpent" value="74090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -406,7 +436,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290993" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35681292" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35681292" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3290993" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -600,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/auth/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/auth/signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -618,6 +641,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/auth/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/user/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
