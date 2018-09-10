@@ -52,8 +52,7 @@ describe(" #Testing the validation of email " ,function () {
 
 describe(" #Testing the email utility ",function(){
     it('should send an email to the provided address', function (done) {
-        let email = tokenNotifier('orionghana.io@gmail.com', 'offeilord@gmail.com', 'Lord Acheampong', 'siofidfosifosfsdf', "Signing In");
-        console.log(email);
+        tokenNotifier('orionghana.io@gmail.com', 'offeilord@gmail.com', 'Lord Acheampong', 'siofidfosifosfsdf', "Signing In");
         done();
     });
 })

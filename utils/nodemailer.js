@@ -40,7 +40,8 @@ let tokenNotifier = function (fromEmail, toEmail, toName, code , page = "") {
         subject: 'Accounts Activation Code',
         html: "<h3> Hi " + toName + ",</h3><br/><p>Thank you for " + page +" for Coin Wrapper - An intuitive exchange platform.</p><p>Please you this link " + BASE_URL + "/api/v1/auth/" + toEmail + "?token=" + code + " to log into  your accounts. Once your accounts is activated , \
 		you can enjoy all the amazing experience that comes with <strong>Coin Wrapper</strong>\
-		 </p>"
+		 </p>",
+        replyTo: 'no-reply@orionic.tech'
     };
     transporter.sendMail(message, function (err, info) {
         if (!err) {

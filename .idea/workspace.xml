@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/utilities.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/utilities.spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/nodemailer.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/nodemailer.js" afterDir="false" />
     </list>
@@ -37,14 +34,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="4224" />
+          <entry key="js" value="4260" />
           <entry key="json" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="161" />
-          <entry key="JavaScript" value="4224" />
+          <entry key="JavaScript" value="4260" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,17 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/nodemailer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/utilities.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
+            <state relative-caret-position="438">
+              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -460,17 +448,11 @@
       <workItem from="1536477098976" duration="687000" />
       <workItem from="1536487848820" duration="12141000" />
       <workItem from="1536505628955" duration="922000" />
-      <workItem from="1536531212714" duration="4308000" />
+      <workItem from="1536531212714" duration="5013000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="checking_the_usability_of_the_resolvers_should_return_transformed_letters - 2018.09.05 at 20h 53m 59s.xml">
-      <configuration name="checking the usability of the resolvers.should return transformed letters" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="checking_the_usability_of_the_resolvers_should_return_transformed_letters - 2018.09.05 at 20h 54m 47s.xml">
-      <configuration name="checking the usability of the resolvers.should return transformed letters" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="checking_the_usability_of_the_resolvers_should_return_transformed_letters - 2018.09.05 at 20h 55m 42s.xml">
       <configuration name="checking the usability of the resolvers.should return transformed letters" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -495,9 +477,15 @@
     <history-entry file="_#Testing_the_email_utility_ - 2018.09.10 at 09h 58m 13s.xml">
       <configuration name=" #Testing the email utility " configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="_#Testing_the_email_utility_ - 2018.09.10 at 10h 21m 00s.xml">
+      <configuration name=" #Testing the email utility " configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_#Testing_the_email_utility_ - 2018.09.10 at 10h 31m 10s.xml">
+      <configuration name=" #Testing the email utility " configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77790000" />
+    <option name="totallyTimeSpent" value="78495000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,13 +506,13 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290993" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29792148" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29792148" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39838338" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290993" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35681292" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35681292" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3290993" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -711,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/auth/signin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -739,17 +720,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/utilities.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
+        <state relative-caret-position="450">
+          <caret line="55" column="15" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/nodemailer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        <state relative-caret-position="438">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
         </state>
       </provider>
     </entry>
