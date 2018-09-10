@@ -1,4 +1,5 @@
+require('dotenv').config();
 module.exports = {
-    'secret':'ilovescotchyscotch',
-    'database':'mongodb://127.0.0.1:27017/coinwrapper'
+    'secret':process.env.DB_SECRET || "Iloveprogramming7*&*scotch.io*&withmymom",
+    'database': process.env.DB_STRING
 }

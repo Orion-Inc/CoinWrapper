@@ -18,7 +18,6 @@ let app = express();
 //Setting the basic initials
 app.set('title','Task Application API');
 app.set('port',process.env.PORT || 8080);
-app.set('BASE_URL','localhost:8080/');
 
 mongoose.connect(config.database || process.env.MONGODB_URL); // this is a pending connection
 let db = mongoose.connection;

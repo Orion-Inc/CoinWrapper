@@ -9,7 +9,12 @@ DashboardController = {
     },
     index: function(req,res){
         const user_id = req.decoded;
-        console.log(user_id);
+        res.status(200)
+            .json({
+                message: "User details found",
+                success: true,
+                results: null,
+            });
     }
 };
 
