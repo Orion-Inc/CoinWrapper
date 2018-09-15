@@ -5,6 +5,7 @@ let express = require("express"),
     SignInRouter = require("./v1/auth/signin"),
     AuthorizationGuard = require("@guards/authorizationGuard"),
     DashboardRouter = require("./v1/user/dashboard"),
+    WalletRouter = require("./v1/wallet/wallet"),
     app = express();
 
 let apiAuth = express.Router();
@@ -13,7 +14,9 @@ apiAuth.use('/auth',[SignUpRouter,SignInRouter]);
 //Middleware for checking the authentication data
 apiAuth.use(AuthorizationGuard);
 //Authorization routes will appear here
-apiAuth.use('/user', DashboardRouter);
+apiAuth.use('/user', [DashboardRouter,WalletRouter]);
+
+
 
 module.exports = apiAuth;
 

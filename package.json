@@ -22,7 +22,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
-    "bluebird": "^3.5.1",
+    "bluebird": "^3.5.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "dotenv": "^6.0.0",
@@ -30,13 +30,14 @@
     "express-session": "^1.15.6",
     "googleapis": "^33.0.0",
     "jslint": "^0.12.0",
-    "jsonwebtoken": "^8.2.1",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
     "module-alias": "^2.1.0",
-    "mongoose": "^5.1.3",
-    "morgan": "^1.9.0",
+    "mongoose": "^5.2.8",
+    "morgan": "^1.9.1",
     "multer": "^1.3.1",
-    "nodemailer": "^4.6.7",
-    "nodemon": "^1.17.5",
+    "nodemailer": "^4.6.8",
+    "nodemon": "^1.18.4",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "uid-generator": "^1.0.0",
@@ -48,11 +49,12 @@
     "@utils": "utils",
     "@conn": "connection",
     "@guards": "guards",
-    "@controllers": "controllers/v1"
+    "@controllers": "controllers/v1",
+    "@vendors": "vendor"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
-    "supertest": "^3.1.0"
+    "supertest": "^3.3.0"
   }
 }

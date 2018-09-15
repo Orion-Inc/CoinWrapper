@@ -16,10 +16,13 @@ let express = require('express'),
 let app = express();
 
 //Setting the basic initials
+require("dotenv").config();
 app.set('title','Task Application API');
 app.set('port',process.env.PORT || 8080);
 
-mongoose.connect(config.database || process.env.MONGODB_URL); // this is a pending connection
+mongoose.connect(config.database || process.env.MONGODB_URL,{
+    useNewUrlParser: true
+}); // this is a pending connection
 let db = mongoose.connection;
 db.on('error',console.error.bind(console," Connection Error "));
 db.once('open',function(){

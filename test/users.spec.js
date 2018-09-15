@@ -1,5 +1,6 @@
-const Users = require('../models/users'),
-    User_Verification = require('../models/user_verification'),
+require("module-alias/register");
+const Users = require('@models/users/users'),
+    User_Verification = require('@models/users/user_verification'),
     expect = require('chai').expect,
     db = require('./utils/db.spec');
 

@@ -22,7 +22,7 @@ DashboardController = {
     },
     index: function(req,res){
         const token_id = req.decoded;
-        let Query = Users.findOne({ _id: token_id.user_id });
+        let Query = Users.findOne({ _id: { $eq : token_id.user_id } });
         Query.exec(function(err, results){
             res.status(200)
                 .json({
