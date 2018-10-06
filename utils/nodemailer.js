@@ -37,7 +37,7 @@ let tokenNotifier = function (fromEmail, toEmail, toName, code , page = "") {
         from: fromEmail,
         to: toEmail,
         subject: 'Accounts Activation Code',
-        html: "<h3> Hi " + toName + ",</h3><br/><p>Thank you for " + page +" for Coin Wrapper - An intuitive exchange platform.</p><p>Please you this link " + process.env.APP_LOCAL_URL + "/api/v1/user/authorize/" + toEmail + "?token=" + code + " to log into  your accounts. Once your accounts is activated , \
+        html: "<h3> Hi " + toName + ",</h3><br/><p>Thank you for " + page +" for Coin Wrapper - An intuitive exchange platform.</p><p>Please you this link " + process.env.APP_PROD_URL + "/api/v1/user/authorize/" + toEmail + "?token=" + code + " to log into  your accounts. Once your accounts is activated , \
 		you can enjoy all the amazing experience that comes with <strong>Coin Wrapper</strong>\
 		 </p>",
         replyTo: 'no-reply@orionic.tech'

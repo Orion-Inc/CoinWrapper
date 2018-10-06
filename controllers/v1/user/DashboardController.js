@@ -8,7 +8,7 @@ DashboardController = {
         const user_email = req.params.email;
         const token = req.query.token;
         if (user_email !== '' || user_email !== null){
-            res.redirect(process.env.APP_LOCAL_URL + '/user/home');
+            res.redirect(process.env.APP_PROD_URL + '/authorize/');
         } else {
             res.status(403)
                 .json({

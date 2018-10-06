@@ -28,8 +28,8 @@ SignInController = {
                         user_id: user._id,
                         firstname: user.firstname,
                         othername: user.othername,
-                        email: user.email,
                         username: user.username,
+                        email: user.email,
                         phone_number: user.phone
                     };
 
