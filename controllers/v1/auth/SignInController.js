@@ -71,7 +71,12 @@ SignInController = {
                     // res.redirect(401, '/signup');
                 } else if (user) {
                     const payload = {
-                        user_id: user._id
+                        user_id: user._id,
+                        firstname: user.firstname,
+                        othername: user.othername,
+                        username: user.username,
+                        email: user.email,
+                        phone_number: user.phone
                     };
 
                     let token = jwt.sign(payload, config.secret, {
