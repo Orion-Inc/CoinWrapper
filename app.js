@@ -1,3 +1,4 @@
+require('dotenv').config();
 let express = require('express'),
     http = require('http'),
     mongoose = require('mongoose'),
@@ -20,7 +21,7 @@ require("dotenv").config();
 app.set('title','Task Application API');
 app.set('port',process.env.PORT || 8080);
 
-mongoose.connect(config.database || process.env.MONGODB_URL,{
+mongoose.connect(process.env.CLUSTER_DBSTRING,{
     useNewUrlParser: true
 }); // this is a pending connection
 let db = mongoose.connection;
