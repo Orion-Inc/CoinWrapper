@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="" />
+    <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/controllers/v1/wallet/WalletController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/v1/wallet/WalletController.js" afterDir="false" />
+    </list>
     <ignored path="express-api.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,7 +42,7 @@
         <counts>
           <entry key="env" value="419" />
           <entry key="gitignore" value="16" />
-          <entry key="js" value="14418" />
+          <entry key="js" value="14419" />
           <entry key="json" value="223" />
           <entry key="sh" value="260" />
         </counts>
@@ -49,7 +51,7 @@
         <counts>
           <entry key=".env file" value="397" />
           <entry key="JSON" value="223" />
-          <entry key="JavaScript" value="14418" />
+          <entry key="JavaScript" value="14419" />
           <entry key="PLAIN_TEXT" value="298" />
         </counts>
       </usages-collector>
@@ -58,8 +60,8 @@
           <entry key="Procfile" value="2" />
           <entry key="env" value="7" />
           <entry key="gitignore" value="4" />
-          <entry key="js" value="89" />
-          <entry key="json" value="13" />
+          <entry key="js" value="90" />
+          <entry key="json" value="14" />
           <entry key="map" value="1" />
           <entry key="sh" value="2" />
           <entry key="ts" value="2" />
@@ -68,8 +70,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="6" />
-          <entry key="JSON" value="13" />
-          <entry key="JavaScript" value="89" />
+          <entry key="JSON" value="14" />
+          <entry key="JavaScript" value="90" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SourceMap" value="1" />
           <entry key="TypeScript" value="2" />
@@ -87,11 +89,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/v1/wallet/WalletController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1184">
-              <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+            <state relative-caret-position="81">
+              <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -101,15 +112,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/swap-v1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -133,19 +135,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/v1/user/dashboard.js">
+        <entry file="file://$PROJECT_DIR$/utils/nodemailer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="62" lean-forward="true" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+            <state relative-caret-position="433">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/nodemailer.js">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="-279">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -168,7 +170,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -230,12 +232,12 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/controllers/v1/wallet/createWalletController.js" />
         <option value="$PROJECT_DIR$/models/wallet/wallet_status.js" />
-        <option value="$PROJECT_DIR$/controllers/v1/wallet/WalletController.js" />
         <option value="$PROJECT_DIR$/api/v1/wallet/wallet.js" />
         <option value="$PROJECT_DIR$/api/swap-v1.js" />
         <option value="$PROJECT_DIR$/controllers/v1/user/DashboardController.js" />
         <option value="$PROJECT_DIR$/controllers/v1/auth/SignUpController.js" />
         <option value="$PROJECT_DIR$/controllers/v1/auth/SignInController.js" />
+        <option value="$PROJECT_DIR$/controllers/v1/wallet/WalletController.js" />
       </list>
     </option>
   </component>
@@ -574,7 +576,7 @@
       <workItem from="1537197022579" duration="381000" />
       <workItem from="1537343904246" duration="4000" />
       <workItem from="1537885058035" duration="103000" />
-      <workItem from="1538843620582" duration="870000" />
+      <workItem from="1538843620582" duration="1576000" />
     </task>
     <servers />
   </component>
@@ -611,7 +613,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136971000" />
+    <option name="totallyTimeSpent" value="137677000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -792,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/google-auth-library/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2669" />
@@ -870,20 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/nodemailer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/user/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -895,13 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/v1/wallet/WalletController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -933,6 +907,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -940,10 +921,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/utils/nodemailer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="433">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/v1/wallet/WalletController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
         </state>
       </provider>
     </entry>

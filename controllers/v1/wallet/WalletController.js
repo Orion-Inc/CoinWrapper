@@ -1,7 +1,7 @@
 require("module-alias/register");
 const express = require("express");
 const Axios = require('@vendors/Axios');
-const Resolvers = require("@utils/Resolvers");
+const Resolvers = require("@utils/resolvers");
 const _ = require("lodash");
 
 let walletController;
