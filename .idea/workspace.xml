@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/v1/auth/SignInController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/v1/auth/SignInController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/v1/user/DashboardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/v1/user/DashboardController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/nodemailer.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/nodemailer.js" afterDir="false" />
-    </list>
+    <list default="true" id="b90037c2-40a5-4d64-bb98-a1b4cc08773a" name="Default" comment="" />
     <ignored path="express-api.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -133,7 +126,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/v1/auth/SignInController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="11">
               <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
             </state>
           </provider>
@@ -578,7 +571,7 @@
       <workItem from="1537197022579" duration="381000" />
       <workItem from="1537343904246" duration="4000" />
       <workItem from="1537885058035" duration="103000" />
-      <workItem from="1538843620582" duration="5448000" />
+      <workItem from="1538843620582" duration="5755000" />
     </task>
     <servers />
   </component>
@@ -615,7 +608,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141549000" />
+    <option name="totallyTimeSpent" value="141856000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -628,7 +621,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49393415" visible="true" weight="0.11995178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -944,7 +936,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/v1/auth/SignInController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="11">
           <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
         </state>
       </provider>
