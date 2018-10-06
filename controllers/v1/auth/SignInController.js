@@ -32,7 +32,6 @@ SignInController = {
                         email: user.email,
                         phone_number: user.phone
                     };
-
                     let token = jwt.sign(payload, config.secret, {
                         algorithm: 'HS256',
                         expiresIn: '300s'
