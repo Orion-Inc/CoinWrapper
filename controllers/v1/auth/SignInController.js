@@ -25,7 +25,12 @@ SignInController = {
                         });
                 } else if (user) {
                     const payload = {
-                        user_id: user._id
+                        user_id: user._id,
+                        firstname: user.firstname,
+                        othername: user.othername,
+                        email: user.email,
+                        username: user.username,
+                        phone_number: user.phone
                     };
 
                     let token = jwt.sign(payload, config.secret, {

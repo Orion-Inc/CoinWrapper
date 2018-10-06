@@ -30,7 +30,12 @@ SignUpController = {
                     if (!err) {
                         // Using jwt instead for the token generation
                         const payload = {
-                            user_id: results._id
+                            user_id: results._id,
+                            firstname: results.firstname,
+                            othername: results.othername,
+                            email: results.email,
+                            username: results.username,
+                            phone_number: results.phone
                         };
                         let uriToken = jwt.sign(payload, config.secret, {
                             algorithm: 'HS256',

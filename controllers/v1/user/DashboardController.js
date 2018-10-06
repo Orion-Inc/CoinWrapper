@@ -9,9 +9,6 @@ DashboardController = {
         const token = req.query.token;
         if (user_email !== '' || user_email !== null){
             res.redirect(process.env.APP_LOCAL_URL + '/user/home');
-            // res.json({
-            //     messag: 'yay'
-            // })
         } else {
             res.status(403)
                 .json({
