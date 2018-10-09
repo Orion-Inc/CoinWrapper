@@ -56,13 +56,18 @@ SignUpController = {
 
                                 res.status(201).json({
                                     message: "User Profile Successfully Created\n An Email has been sent to your " + results.email + " .",
-                                    success: true
+                                    success: true,
+                                    results: results,
+                                    meta: {
+                                        token: uriToken
+                                    }
                                 });
                             } else {
                                 res.status(401)
                                     .json({
                                         message: 'An error occurred while saving access token',
-                                        success: false
+                                        success: false,
+                                        results: err
                                     });
                             }
                         });
