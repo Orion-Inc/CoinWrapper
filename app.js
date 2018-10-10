@@ -18,7 +18,7 @@ let app = express();
 //Setting the basic initials
 require("dotenv").config();
 app.set('title','Task Application API');
-app.set('port',process.env.PORT || 8080);
+app.set('port',process.env.PORT || 8088);
 
 mongoose.connect(process.env.CLUSTER_DBSTRING,{
     useNewUrlParser: true
