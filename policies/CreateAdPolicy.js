@@ -10,13 +10,16 @@ CreateAdPolicy = {
             amount_to_trade: Joi.number().precision(2).required(),
             trade_fee: Joi.number().precision(2).required(),
             mincoin_amount: Joi.number().precision(2).required(),
-            payment_method: Joi.string().required(),
-            merchant_name: Joi.string().min(5).required(),
-            account_name: Joi.string().min(5).required(),
-            account_number: Joi.number().integer().required(),
+            payment_method: Joi.object().keys({
+                method_name: Joi.array().items(Joi.string().required()).single(),
+                merchant_name: Joi.array().items(Joi.string().required()),
+                account_name: Joi.array().items(Joi.string().min(5).required()).single(),
+                account_number: Joi.array().items(Joi.number().integer().required())
+            }),
             trade_terms: Joi.string().empty(''),
             payment_timeout: Joi.string().empty(''),
-            reject_unverified_users: Joi.boolean();
+            reject_unverified_users: Joi.boolean(),
+            user_id: Joi.string().required()
         });
 
         // validating the user input against the defined configurations here
@@ -80,7 +83,7 @@ CreateAdPolicy = {
                             results: null
                         });
                     break;
-                case 'payment_method':
+                case 'payment_method.method_name':
                     res.status(500)
                         .json({
                             message: error.details[0].message,
@@ -88,7 +91,7 @@ CreateAdPolicy = {
                             results: null
                         });
                     break;
-                case 'merchant_name':
+                case 'payment_method.merchant_name':
                     res.status(500)
                         .json({
                             message: error.details[0].message,
@@ -96,7 +99,7 @@ CreateAdPolicy = {
                             results: null
                         });
                     break;
-                case 'account_name':
+                case 'payment_method.account_name':
                     res.status(500)
                         .json({
                             message: error.details[0].message,
@@ -104,7 +107,7 @@ CreateAdPolicy = {
                             results: null
                         });
                     break;
-                case 'account_number':
+                case 'payment_method.account_number':
                     res.status(500)
                         .json({
                             message: error.details[0].message,
