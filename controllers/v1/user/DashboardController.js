@@ -1,6 +1,8 @@
 require("module-alias/register");
 let express = require("express"),
-    Users = require("@models/users/users");
+    Users = require("@models/users/users"),
+    CreateAds = require("@models/ads/create_ads"),
+    _ = require("lodash");
 
 let DashboardController;
 DashboardController = {
@@ -28,6 +30,19 @@ DashboardController = {
                     results: results,
                 });
         });
+    },
+    createAds: function(req, res) {
+        if (_.isEmpty(req.body)) {
+            res.status(500)
+                .json({
+                    message: 'Form set cannot be empty',
+                    success: false,
+                    results: null
+                });
+        } else {
+            const Ad = new CreateAds(req.body);
+
+        }
     }
 };
 
