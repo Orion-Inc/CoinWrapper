@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema  = mongoose.Schema;
+const Users = require("@models/users/users");
 
 // instantiating the schema here to bind to the model container
 const CreateAdSchema = new Schema({
@@ -39,24 +40,26 @@ const CreateAdSchema = new Schema({
         default: null
     },
     payment_method: {
-        type: String,
-        required: true,
-        default: null
-    },
-    merchant_name: {
-        type: String,
-        required: true,
-        default: null
-    },
-    account_name: {
-        type: String,
-        required: true,
-        default: null
-    },
-    account_number: {
-        type: Number,
-        required: true,
-        default: null
+        method_name: {
+            type: [String],
+            required: true,
+            default: null
+        },
+        merchant_name: {
+            type: [String],
+            required: true,
+            default: null
+        },
+        account_name: {
+            type: [String],
+            required: true,
+            default: null
+        },
+        account_number: {
+            type: [Number],
+            required: true,
+            default: null
+        }
     },
     trade_terms: {
         type: String,
@@ -70,6 +73,10 @@ const CreateAdSchema = new Schema({
     },
     reject_unverified_users: {
         type: Boolean
+    },
+    user_id: {
+        type: Schema.Types.ObjectId,
+        ref: 'Users'
     }
 },{
     timestamps: {
