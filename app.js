@@ -20,7 +20,7 @@ require("dotenv").config();
 app.set('title','Task Application API');
 app.set('port',process.env.PORT || 8088);
 
-mongoose.connect(process.env.CLUSTER_DBSTRING,{
+mongoose.connect(process.env.DB_STRING,{
     useNewUrlParser: true
 }); // this is a pending connection
 let db = mongoose.connection;

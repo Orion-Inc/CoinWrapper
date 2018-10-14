@@ -40,7 +40,50 @@ DashboardController = {
                     results: null
                 });
         } else {
-            const Ad = new CreateAds(req.body);
+            // getting the details from the request body
+            const generic_data = {
+                trade_type: req.body.trade_type,
+                coin: req.body.coin,
+                currency: req.body.currency,
+                exchange_rate: req.body.exchange_rate,
+                amount_to_trade: req.body.amount_to_trade,
+                trade_fee: req.body.trade_fee,
+                mincoin_amount: req.body.mincoin_amount,
+                trade_terms: req.body.trade_terms,
+                payment_timeout: req.body.payment_timeout,
+                reject_unverified_users: req.body.reject_unverified_users,
+                user_id: req.body.user_id
+            };
+
+            const payment_details = {
+                payment_method: {
+                    method_name: req.body.method_name,
+                    merchant_name: req.body.merchant_name,
+                    account_name: req.body.account_name,
+                    account_number: req.body.account_number
+                }
+            };
+            // merging the two data and then saving the results to the database
+
+            const createAd_details = _.assign(generic_data,payment_details);
+            const details = new CreateAds(createAd_details);
+            details.save( function (err, ad) {
+                if (err) {
+                    res.status(500)
+                        .json({
+                            message: 'An error occurred while creating an ad',
+                            success: false,
+                            results: err
+                        });
+                } else {
+                    res.status(201)
+                        .json({
+                            message: 'Ad Successfully Created',
+                            success: true,
+                            results: ad
+                        });
+                }
+            })
 
         }
     }
