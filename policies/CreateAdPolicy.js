@@ -10,12 +10,10 @@ CreateAdPolicy = {
             amount_to_trade: Joi.number().precision(2).required(),
             trade_fee: Joi.number().precision(2).required(),
             mincoin_amount: Joi.number().precision(2).required(),
-            payment_method: Joi.object().keys({
-                method_name: Joi.array().items(Joi.string().required()).single(),
-                merchant_name: Joi.array().items(Joi.string().required()),
-                account_name: Joi.array().items(Joi.string().min(5).required()).single(),
-                account_number: Joi.array().items(Joi.number().integer().required())
-            }),
+            method_name: Joi.array().items(Joi.string().required()).single(),
+            merchant_name: Joi.array().items(Joi.string().required()),
+            account_name: Joi.array().items(Joi.string().min(5).required()).single(),
+            account_number: Joi.array().items(Joi.number().integer().positive().required()),
             trade_terms: Joi.string().empty(''),
             payment_timeout: Joi.string().empty(''),
             reject_unverified_users: Joi.boolean(),
@@ -83,7 +81,7 @@ CreateAdPolicy = {
                             results: null
                         });
                     break;
-                case 'payment_method.method_name':
+                case 'method_name':
                     res.status(500)
                         .json({
                             message: error.details[0].message,
@@ -91,7 +89,7 @@ CreateAdPolicy = {
                             results: null
                         });
                     break;
-                case 'payment_method.merchant_name':
+                case 'merchant_name':
                     res.status(500)
                         .json({
                             message: error.details[0].message,
@@ -99,7 +97,7 @@ CreateAdPolicy = {
                             results: null
                         });
                     break;
-                case 'payment_method.account_name':
+                case 'account_name':
                     res.status(500)
                         .json({
                             message: error.details[0].message,
@@ -107,7 +105,7 @@ CreateAdPolicy = {
                             results: null
                         });
                     break;
-                case 'payment_method.account_number':
+                case 'account_number':
                     res.status(500)
                         .json({
                             message: error.details[0].message,
@@ -144,7 +142,7 @@ CreateAdPolicy = {
                         .json({
                             message: 'Invalid information provided',
                             success: false,
-                            results: null
+                            results: error.details[0].message
                         });
                     break;
             }
@@ -153,3 +151,6 @@ CreateAdPolicy = {
         }
     }
 }
+
+// exporting the configuration globally
+module.exports = CreateAdPolicy;
