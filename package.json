@@ -29,6 +29,7 @@
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "googleapis": "^33.0.0",
+    "joi": "^13.7.0",
     "jslint": "^0.12.0",
     "jsonwebtoken": "^8.3.0",
     "lodash": "^4.17.11",
@@ -50,7 +51,8 @@
     "@conn": "connection",
     "@guards": "guards",
     "@controllers": "controllers/v1",
-    "@vendors": "vendor"
+    "@vendors": "vendor",
+    "@policies": "policies"
   },
   "devDependencies": {
     "chai": "^4.1.2",
