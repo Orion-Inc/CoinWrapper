@@ -8,6 +8,7 @@ let walletController;
 walletController = {
     all: function(req,res) {
         // Getting all wallet here
+        // Working on the implementation of blockcypher
         if (_.isString(req.body.wallet_type)) {
             const wallet_type = req.body.wallet_type;
             Axios.get('/v1/btc/main/wallets?token='+process.env.ORION_TOKEN)

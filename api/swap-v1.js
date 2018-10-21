@@ -16,8 +16,6 @@ apiAuth.use(AuthorizationGuard);
 //Authorization routes will appear here
 apiAuth.use('/user', [DashboardRouter,WalletRouter]);
 
-
-
 module.exports = apiAuth;
 
 
