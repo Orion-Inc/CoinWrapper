@@ -9,7 +9,6 @@ let express = require('express'),
     config = require('./connection/connectionString'),
     Users = require('./models/users/users'),
     User_Verification = require('./models/users/user_verification'),
-    tokenNotifier  = require('./utils/nodemailer'),
     Resolvers      = require('./utils/resolvers'),
     SwapV1 = require('./api/swap-v1');
 //Instantiating the express  application
@@ -20,14 +19,27 @@ require("dotenv").config();
 app.set('title','Task Application API');
 app.set('port',process.env.PORT || 8088);
 
-mongoose.connect(process.env.CLUSTER_DBSTRING,{
-    useNewUrlParser: true
-}); // this is a pending connection
-let db = mongoose.connection;
-db.on('error',console.error.bind(console," Connection Error "));
-db.once('open',function(){
-    console.log("Connection established");
-});
+if(process.env.NODE_ENV === "development") {
+    mongoose.connect(process.env.DB_STRING,{
+        useNewUrlParser: true
+    }); // this is a pending connection
+    let db = mongoose.connection;
+    db.on('error',console.error.bind(console," Connection Error "));
+    db.once('open',function(){
+        console.log("Connection established");
+    });
+    
+} else if(process.env.NODE_ENV === "production") {
+    mongoose.connect(process.env.CLUSTER_DBSTRING,{
+        useNewUrlParser: true
+    }); // this is a pending connection
+    let db = mongoose.connection;
+    db.on('error',console.error.bind(console," Connection Error "));
+    db.once('open',function(){
+        console.log("Connection established");
+    });
+    
+}
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
