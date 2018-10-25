@@ -53,7 +53,8 @@
     "@guards": "guards",
     "@controllers": "controllers/v1",
     "@vendors": "vendor",
-    "@policies": "policies"
+    "@policies": "policies",
+    "@services": "services"
   },
   "devDependencies": {
     "chai": "^4.1.2",

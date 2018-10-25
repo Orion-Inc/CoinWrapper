@@ -38,5 +38,8 @@ module.exports = {
         } else {
             return input.toUpperCase();
         }
+    },
+    generateUUID: function() {
+        
     }
 };

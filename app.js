@@ -40,7 +40,7 @@ if(process.env.NODE_ENV === "development") {
     });
     
 }
-
+console.log(process.env.NODE_ENV);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());

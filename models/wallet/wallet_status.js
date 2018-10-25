@@ -6,10 +6,18 @@ const Users = require("@models/users/users");
 
 // Instantiating the schema to create a model
 const WalletStatusSchema = new Schema({
+    wallet_identifier: {
+        type: String,
+        required: true
+    },
     status: {
         type: Boolean,
         required: true,
         default: false
+    },
+    user_email: {
+        type: String,
+        required: true
     },
     user_id: {
         type: Schema.Types.ObjectId,

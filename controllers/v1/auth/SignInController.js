@@ -34,7 +34,7 @@ SignInController = {
                     };
                     let token = jwt.sign(payload, config.secret, {
                         algorithm: 'HS256',
-                        expiresIn: '300s'
+                        expiresIn: '7200s' // 300s
                     });
 
                     //Sending login url with token base on the user option
@@ -81,7 +81,7 @@ SignInController = {
 
                     let token = jwt.sign(payload, config.secret, {
                         algorithm: 'HS256',
-                        expiresIn: '300s'
+                        expiresIn: '7200s'
                     });
 
                     //Sending login url with token base on the user option
