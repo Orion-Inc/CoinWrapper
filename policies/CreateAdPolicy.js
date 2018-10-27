@@ -14,12 +14,11 @@ CreateAdPolicy = {
             merchant_name: Joi.array().items(Joi.string().required()),
             account_name: Joi.array().items(Joi.string().min(5).required()).single(),
             account_number: Joi.array().items(Joi.number().integer().positive().required()),
-            trade_terms: Joi.string().empty(''),
+            trade_terms: Joi.any().optional(''),
             payment_timeout: Joi.string().empty(''),
             reject_unverified_users: Joi.boolean(),
             user_id: Joi.string().required()
         });
-
         // validating the user input against the defined configurations here
         const { error, value } = Joi.validate(req.body, createAdSchema);
         // if there's an error in the input , then do this
