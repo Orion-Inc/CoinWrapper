@@ -21,6 +21,11 @@ let UserSchema = new Schema({
         required: true,
         unique: true
     },
+    password: {
+        type: String,
+        required: false,
+        default: ""
+    },
     phone: {
         type: [Number,String],
         required: true

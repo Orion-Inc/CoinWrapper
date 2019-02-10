@@ -14,11 +14,14 @@ WalletServices = {
     getAllWalletByUser(coin_type, token) {
         return Axios.get('/v1/' + coin_type + '/main/wallets?token=' + token);
     },
+    getSingleWalletByUser(coin_type, wallet_name, token) {
+        return Axios.get('/v1/' + coin_type + '/main/wallets/hd/' + wallet_name + '?token=' + token);
+    },
     getNormalWalletByName(coin_type, wallet_name, token) {
         return Axios.get('/v1/' + coin_type + '/main/wallets/' + wallet_name + '/addresses?token=' + token);
     },
     getHDWalletByName(coin_type, wallet_name, token) {
-        return Axios.get('/v1/' + coin_type + '/main/wallets/hd/' + wallet_name + '?token=' + token);
+        return Axios.get('/v1/' + coin_type + '/main/wallets/hd/' + wallet_name + '/addresses?token=' + token);
     },
     createNormalWallet(coin_type, token, data) {
         return Axios.post('/v1/' + coin_type + '/main/wallets?token=' + token, JSON.stringify(data));
@@ -31,6 +34,12 @@ WalletServices = {
     },
     deleteHDWallet(coin_type, token, name) {
         return Axios.delete('/v1/' + coin_type + '/main/wallets/hd/' + name + '?token=' + token);
+    },
+    addAddressToWallet(coin_type, wallet_name, token, data) {
+        return Axios.post('/v1/' + coin_type + '/main/wallets/' + wallet_name + '/addresses?token=' + token, JSON.stringify(data));
+    },
+    createTransaction(newtx){
+        return Axios.post('/v1/bcy/test/txs/new', JSON.stringify(newtx));
     }
 };
 

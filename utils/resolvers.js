@@ -1,8 +1,30 @@
 //requiring the necessary modules
 var bcrypt = require('bcryptjs'),
+    SALT_FACTOR = 10,
 	TokenGenerator = require('uid-generator');
 
 module.exports = {
+    generateHash: function(password) {
+        return new Promise( (resolve, reject) => {
+            if(password != "") {
+                bcrypt.genSalt(SALT_FACTOR,(err, salt) => {
+                    bcrypt.hash(password, salt, (err, hash) => {
+                        if(err) {
+                            reject(err)
+                        } else { resolve(hash) }
+                    })
+                })
+            }
+        });
+    },
+    comparePassword: function(password, hash) {
+        return new Promise((resolve, reject) => {
+            bcrypt.compare(password, hash, (err, results) => {
+                if(err) { reject(err) }
+                else { resolve(results) }
+            })
+        });
+    },
 	generateValidToken: function(bitSize, encoding=TokenGenerator.BASE62){
 	    return new Promise( (resolve,reject) => {
 	       if (!isNaN(bitSize)){
